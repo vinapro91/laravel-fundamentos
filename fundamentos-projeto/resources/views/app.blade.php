@@ -11,10 +11,15 @@
     <title>@yield('titulo')</title>
   </head>
   <body>
-    <nav class="navbar navbar-light bg-light">
-    <a class="navbar-brand" href="{{ route('index') }}">Home</a>
-    </nav>
+    <ul class="nav">
+  <li class="nav-item">
+  <a class="navbar-brand" href="{{ route('index') }}">Home </a>
+  </li>
+  <li class="nav-item">
+  <a class="navbar-brand" href="{{ route('clients.index') }}"> Clientes </a>
+  </li>
 
+</ul>
     <div class="container">
     @yield('conteudo')
     </div>

@@ -14,7 +14,6 @@ class siteController extends Controller
      */
     public function index()
     {
-        echo "conteudo index";
         return view('home');
     }
 
@@ -86,6 +85,6 @@ class siteController extends Controller
         // return view('clientes');
     }
     
-    
+
     
 }

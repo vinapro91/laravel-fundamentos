@@ -13,6 +13,12 @@ class Saudacao extends Controller
      */
     public function __invoke(string $nome = null)
     {
-        echo "olá {$nome}";
+        // return view('saudacao', [
+        //     'nome' => $nome,
+        // ]);
+
+        // return view('saudacao', compact('nome'));
+        
+        return view('saudacao')->with('nome', $nome);
     }
 }

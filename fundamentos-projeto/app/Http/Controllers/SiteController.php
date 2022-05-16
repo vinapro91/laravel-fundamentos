@@ -15,7 +15,7 @@ class siteController extends Controller
     public function index()
     {
         echo "conteudo index";
-        // return view('welcome');
+        return view('home');
     }
 
     /**
@@ -74,11 +74,18 @@ class siteController extends Controller
                  "preco" => 'R$ 20,00',
                  "descricao" => 'Lavagem de tenis'
              ],
-         ];
+        ];
      
-         echo $servicos[$id]['nome'];
-        // return view('servico');
+        return view('servico', [
+            'servico' => $servicos[$id]
+         ]);
     }
+    public function clientes()
+    {
+        echo "conteudo clientes";
+        // return view('clientes');
+    }
+    
     
     
 }
